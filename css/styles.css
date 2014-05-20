@@ -1,0 +1,164 @@
+@import url('http://fonts.googleapis.com/css?family=Sanchez');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { overflow-y: scroll; }
+body { 
+  background: #ededed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #616161;
+  padding-top: 55px;
+}
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; } 
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+
+h2 {
+	display: inline-block;
+	font-size:34px;
+	padding: 7px 12px;
+	font-family: 'Sanchez', 'Times New Roman', serif;
+	background: rgba(255,255,255,0.8);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	color: #616161;
+}
+
+
+/** page structure **/
+#topnav {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 55px;
+  width: 100%;
+  background: #A8CD1B;
+  border-bottom: 2px solid #628aad;
+}
+#topnav ul  { padding-left: 80px; }
+
+#topnav ul li { 
+  display: block;
+  width: auto;
+}
+
+#topnav ul li a {
+  display: block;
+  float: left;
+  line-height: 55px;
+  margin-right: 10px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 1.2 em;
+  color: #fff;
+  text-decoration: none;
+}
+#topnav ul li a:hover {
+  background: #62819d;
+}
+
+
+/** page sections **/
+.contentpg {
+  display: block;
+  min-height: 550px;
+  padding: 55px 80px;
+}
+
+#pagetop {
+  background-image: url('../img/bg1.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;
+  /*css hack internet explorer*/     
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1.jpg',sizingMethod='scale');
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1.jpg',sizingMethod='scale')";
+}
+
+/*Define style of each section after the picture*/
+#about {
+  background: #F5f3ee;
+  color:#000;
+  font-size:17px;
+  }
+
+/*#about2 {
+  background: #F5f3ee;
+}*/
+
+#portfolio {
+   background: #3B3738;
+   color:#FFF;
+   font-size:14px;
+}
+
+#project {
+  background: #F5f3ee;
+  color:#00;
+  font-size:17px;
+  }
+
+#project2 {
+  background: #3B3738;
+  color:#FFF;
+  font-size:17px;
+}
+
+#experience {
+  background: #F5f3ee;
+  color:#00
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/** link colors **/
+a.blue:link {color:#C33; font-weight: bold;}
+a.blue:active {color: #C33; font-weight: bold;}
+a.blue:visited {color: #C33; font-weight: bold;}
+a.blue:hover {color:#FFF; background:#A8CD1B; font-weight: bolder;}
+
+a.red:link {color:#0F0 ; font-weight: bold;}
+a.red:active {color: #0F0; font-weight: bold;}
+a.red:visited {color: #0F0; font-weight: bold;}
+a.red:hover {color:#FFF; background:#A8CD1B; font-weight: bold;}
